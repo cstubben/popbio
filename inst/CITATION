@@ -1,0 +1,14 @@
+citHeader("To cite popbio in publications use:")
+
+citEntry(entry = "article",
+  author =	"Chris J. Stubben and Brook G. Milligan",
+  title =	"Estimating and Analyzing Demographic Models Using the popbio Package in R",
+  journal =	"Journal of Statistical Software",
+  volume =	"22",
+  number =	"11",
+  year = 	"2007",
+textVersion= "Stubben, C.J. and Milligan, B.G.  2007.  Estimating and
+Analyzing Demographic Models Using the popbio Package in R.  Journal
+of Statistical Software 22:11.")
+
+citFooter("The paper is available at http://www.jstatsoft.org/v22/i11")

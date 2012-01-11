@@ -1,0 +1,38 @@
+\name{stoch.growth.rate}
+\alias{stoch.growth.rate}
+\title{ Calculate log stochastic growth rate  }
+\description{
+  Calculates the log stochastic growth rate by Tuljapukar's approximation and by simulation.    
+}
+\usage{
+stoch.growth.rate(matrices, prob = NULL, maxt = 50000, verbose=TRUE)
+}
+
+\arguments{
+  \item{matrices}{ a \code{\link{list}} with two or more projection matrices, or a matrix with one projection matrix per column, with elements filled by columns }
+  \item{prob}{ a vector of probability weights used by \code{\link{sample}} for selecting the projection matrices, defaults to equal probabilities }
+  \item{maxt}{ number of time intervals, default 50000  }
+  \item{verbose}{ Print comment at start of time 1, 10000, 20000, etc.}
+}
+%\details{}
+\value{
+  A list with 3 items
+  \item{ approx }{ log stochastic growth rate by  Tuljapukar's approximation }
+  \item{sim }{ log stochastic growth rate by simulation }
+  \item{ sim.CI}{ confindence interval for simulation}
+}
+\source{converted Matlab code from  Box 7.4 in Morris and Doak (2002) }
+\references{ Morris, W. F., and D. F. Doak. 2002. Quantitative conservation biology: Theory and practice of population viability analysis. Sinauer, Sunderland, Massachusetts, USA.
+ }
+\author{ Chris Stubben }
+
+\seealso{  \code{\link{stoch.projection}} to output population sizes from simulation }
+\examples{
+data(hudsonia)
+sgr<-stoch.growth.rate(hudsonia)
+sgr
+
+exp(sgr$approx)
+
+}
+\keyword{ survey }

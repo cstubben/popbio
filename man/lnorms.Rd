@@ -1,0 +1,48 @@
+\name{lnorms}
+\alias{lnorms}
+\title{ Generate random lognormal values for fertility rates}
+\description{Converts standard normal random values to
+ lognormals with defined means and variances}
+\usage{
+lnorms(n, mean=2, var=1)
+}
+\arguments{
+  \item{n}{number of observations}
+  \item{mean}{ mean value of the fertility rate}
+  \item{var}{variance of the vital rate (not standard deviation)}
+
+}
+%\details{}
+\value{
+  A vector of random lognormal values.
+}
+
+\source{converted Matlab code from  Box 8.4 in Morris and Doak (2002) }
+
+
+\references{Morris, W. F., and D. F. Doak. 2002. Quantitative conservation
+biology: Theory and practice of population viability analysis.
+Sinauer, Sunderland, Massachusetts, USA.}
+
+\author{Original Matlab code by Morris and Doak (2002: 281).
+Adapted to R by Patrick Nantel, 20 June 2005. }
+
+\note{This function could probably be replaced with built-in functions
+  for the Log Normal Distribution \code{\link{rlnorm} }}
+\seealso{  \code{\link{stretchbetaval} }}
+\examples{
+lnorms(1)
+
+ # Generate lognormal random fertilities
+ # for a population of 1000 mature individuals with mean fertility of
+ # 3 and inter-individual variance in fertility of 1.5.
+ 
+ rndfert  <- lnorms(1000, 3,1.5)
+summary(rndfert)
+ hist(rndfert,40, main="Lognormal random fertilities", 
+xlab="Fertility rate", col="blue")
+
+
+ }
+\keyword{ survey }
+

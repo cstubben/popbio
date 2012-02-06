@@ -1,4 +1,7 @@
-changes in version 2.3.2 (2011-11-20)
+changes in version 2.3.2 (2012-02-05)
+
+	* changed stoch.projection to only use a list of matrices.  The matrices 
+        are now sampled once before the loop and the code runs much faster.
 
 	* fixed bug in boot.transitions if some stages are NA.  Vectors
         will have an extra column and return an unhelpful error.

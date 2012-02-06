@@ -8,10 +8,10 @@
 }
 \usage{
 stoch.projection(matrices, n0, tmax = 50, nreps = 5000, prob = NULL, 
-                           nmax = NULL, sumweight = NULL, verbose=TRUE)
+                           nmax = NULL, sumweight = NULL, verbose=FALSE)
 }
 \arguments{
-  \item{matrices}{ a \code{\link{list}} with two or more projection matrices, or a matrix with one projection matrix per column, with elements filled by columns }
+  \item{matrices}{ a \code{\link{list}} with two or more projection matrices }
    \item{n0}{ initial population vector }
   \item{tmax}{ number of time steps or projection intervals to predict future population size }
   \item{nreps}{ number of iterations }
@@ -29,7 +29,7 @@ stoch.projection(matrices, n0, tmax = 50, nreps = 5000, prob = NULL,
 }
 
 \source{converted Matlab code from  Box 7.3 in Morris and Doak
-(2002) with Nmax option added to introduce simple density dependence }
+(2002) with nmax option added to introduce simple density dependence }
 
 \references{ 
 Morris, W. F., and D. F. Doak. 2002. Quantitative conservation biology: Theory and practice of population viability analysis. Sinauer, Sunderland, Massachusetts, USA. }

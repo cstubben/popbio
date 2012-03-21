@@ -8,7 +8,7 @@
 }
 \usage{
 stoch.projection(matrices, n0, tmax = 50, nreps = 5000, prob = NULL, 
-                           nmax = NULL, sumweight = NULL, verbose=FALSE)
+                           nmax = NULL, sumweight = rep(1, length(n0)), verbose=FALSE)
 }
 \arguments{
   \item{matrices}{ a \code{\link{list}} with two or more projection matrices }

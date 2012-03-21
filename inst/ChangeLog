@@ -1,4 +1,10 @@
-changes in version 2.3.2 (2012-02-05)
+changes in version 2.4 (2012-03-20)
+ 
+	*removed vignette due to errors with greek symbols, unloaded packages 
+        (lattice, XML) and others.  This file will be moved to github
+
+	*replaced sd(logLam) with apply(logLam, 2, sd) in vitalsim to avoid 
+         Warning: sd(<matrix>) is deprecated
 
 	* changed stoch.projection to only use a list of matrices.  The matrices 
         are now sampled once before the loop and the code runs much faster.

@@ -1,7 +1,7 @@
 stoch.projection<-function(matrices, n0, tmax=50, nreps=5000, prob=NULL, nmax=NULL, sumweight=rep(1,length(n0)), verbose=FALSE)
 {
    if(!is.list(matrices)){ stop("Please use a list of matrices as input") }   
-  ## initialize empty matrix to store results at each time step...
+  ## initialize empty matrix to store results
    est <- matrix(numeric(nreps * length(n0)), nrow = nreps)
    colnames(est) <- names(n0)
 

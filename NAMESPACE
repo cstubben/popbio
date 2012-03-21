@@ -1,0 +1,4 @@
+importFrom(quadprog, solve.QP)
+#  All functions exported other than those starting with "."
+exportPattern("^[^\\.]")
+

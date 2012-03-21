@@ -1,9 +1,9 @@
 Package: popbio
-Version: 2.3.2
+Version: 2.4
 Author: Chris Stubben, Brook Milligan, Patrick Nantel
 Maintainer: Chris Stubben <stubben@lanl.gov>
 Date: 2012-02-05
 Title: Construction and analysis of matrix population models
 License: GPL
-Suggests: quadprog
+Depends: quadprog
 Description: Construct and analyze projection matrix models from a demography study of marked individuals classified by age or stage. The package covers methods described in Matrix Population Models by Caswell (2001) and Quantitative Conservation Biology by Morris and Doak (2002).

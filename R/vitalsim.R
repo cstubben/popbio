@@ -204,7 +204,8 @@ stochLam  <- matrix(0,runs,1)    # tracker of stochastic lambda values
 
  CDFExt  <- cumsum(PrExt/runs)               # make the extinction CDF function
  loglsim <- mean(logLam)                     # mean of loglambda
- dse     <- 1.96 * sd(logLam)	              # standard error of loglambda
+# dse     <- 1.96 * sd(logLam)	              # standard error of loglambda
+ dse     <- 1.96 *  apply(logLam, 2, sd)       # to avoid Warning: sd(<matrix>) is deprecated
  CL1     <- c(loglsim - dse, loglsim + dse)  # approx. 95% confidence interval
  lamsim  <- exp(mean(logLam))  		          # simulated stochastic growth rate
  CL2     <- exp(CL1)

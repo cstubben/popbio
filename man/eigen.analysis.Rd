@@ -39,23 +39,19 @@ A list with 6 items
 Caswell, H. 2001. Matrix population models: construction, analysis,
 and interpretation, Second edition. Sinauer, Sunderland,
 Massachusetts, USA.
-
- }
-\author{ Original code by  James Holland Jones, Stanford University,
-  Department of Anthropological Sciences, 12 August 2005 at
-  \url{http://popstudies.stanford.edu/summer_course/. } 
- }
+}
+\author{ Original code by  James Holland Jones, Stanford University, August 2005. } 
 
 \seealso{ \code{\link{eigen}} and \code{\link{pop.projection}} }
 \examples{
 
 ## Imprimitive matrix
-A<-matrix(c(0,0,2,.3,0,0,0,.6,0), nrow=3,byrow=TRUE)
+A <- matrix(c(0,0,2,.3,0,0,0,.6,0), nrow=3,byrow=TRUE)
 A
 ev <- eigen(A)
 ev$values
 Mod(ev$values)
-lmax<-which.max(Re(ev$values))
+lmax <- which.max(Re(ev$values))
 lmax
 Re(ev$values)[lmax]
 ## damping ratio is NA 

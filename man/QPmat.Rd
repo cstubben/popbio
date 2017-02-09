@@ -34,21 +34,23 @@ and interpretation. 2nd ed. Sinauer, Sunderland, Massachusetts.}
 \author{Original Matlab code in Caswell (2001: 148).
 Adapted to R by Patrick Nantel}
 
-\note{This function uses package 'quadprog', which should be 
+\note{This function required solve.QP in the 'quadprog' package , which should be 
 installed and loaded on the user's system.
 }
 
 
 
 \examples{
+\dontrun{
 data(nematode)
 ## list nonzero elements
-nonzero<- c( 1, 2, 5, 6, 7, 9)
+nonzero <- c( 1, 2, 5, 6, 7, 9)
 ## create C matrix
-C<- rbind(diag(-1,6), c(1,1,0,0,0,0), c(0,0,1,1,0,0), c(0,0,0,0,0,1))
+C <- rbind(diag(-1,6), c(1,1,0,0,0,0), c(0,0,1,1,0,0), c(0,0,0,0,0,1))
 ## calculate b (transpose is not necessary - either way works)
-b<-apply(C, 1, max)
+b <- apply(C, 1, max)
 QPmat(nematode, C,b,nonzero)
+}
 }
 
 \keyword{ survey }

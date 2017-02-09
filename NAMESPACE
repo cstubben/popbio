@@ -1,4 +1,14 @@
-importFrom(quadprog, solve.QP)
+importFrom("grDevices", "heat.colors", "rainbow")
+importFrom("graphics", "abline", "axis", "boxplot", "hist", "legend",
+             "lines", "matplot", "mtext", "par", "plot", "points",
+             "polygon", "rect", "text")
+importFrom("stats", "binomial", "deriv", "glm", "pbeta", "pnorm",
+             "predict", "qchisq", "qt", "rbinom", "rchisq", "rmultinom",
+             "rnorm", "runif", "sd", "var")
 #  All functions exported other than those starting with "."
-exportPattern("^[^\\.]")
+exportPattern("^[^\\.]")
+
+exportClasses("popbio")
+S3method(mean,list)
+
 

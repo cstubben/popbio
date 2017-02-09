@@ -82,7 +82,8 @@ ie<-sapply(Cm, sum)
 ie<- ie - rep(pe, each=4) - rep(ye, 4)
 names(ie)<-NULL
 names(ie)[seq(1,16,4)]<-1:4
-barplot(ie, xlab="Plot (years 82-83 to 85-86)", ylab="Interaction effect" , ylim=c(-.25, .25), col="blue", las=1)
+barplot(ie, xlab="Plot (years 82-83 to 85-86)", ylab="Interaction effect" , 
+  ylim=c(-.25, .25), col="blue", las=1)
 abline(h=0)
 box()
 title(expression(italic("Calathea ovandensis")))
@@ -109,7 +110,8 @@ names(x)<-c("BU", "RP", "WA", "CA")
 
 ## Plot like Figure 2A in Angert (2006)
 op<-par(mar=c(5,5,4,1))
-barplot(x, xlab="Population", ylab="" , ylim=c(-.4, .4), xlim=c(0,6.5), las=1, space=.5, col="blue")
+barplot(x, xlab="Population", ylab="", xlim=c(0,6.5), ylim=c(-.4, .4), 
+  las=1, space=.5, col="blue")
 abline(h=0)
 mtext(expression(paste(sum(a[ij]), " contributions")), 2, 3.5)
 title(expression(paste(italic("M. cardinalis"), " Population effects")))

@@ -40,11 +40,8 @@ betaval(.5, sd=.05)
 betaval(.5, sd=.05)
 
 ## histogram with mean=0.5 and sd=0.05
-x<-numeric(100)
-for (i in 1:100)
-{
-   x[i]<-betaval(.5,.05)
-}
+
+x <- sapply(1:100, function(x) betaval(0.5, 0.05))
 hist(x, seq(0,1,.025), col="green", ylim=c(0,25), xlab="Value",
 main="Beta distribution with mean=0.5 and sd=0.05")
 

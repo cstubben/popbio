@@ -17,7 +17,7 @@ hudmxdef(vrs)
 \value{
   A  projection matrix
 }
-\source{  \url{http://www.sinauer.com/PVA/hudmxdef.m} }
+\source{  Original MATLAB in Morris and Doak 2002 }
 
 \references{ 
 Morris, W. F., and D. F. Doak. 2002. Quantitative conservation
@@ -25,7 +25,7 @@ biology: Theory and practice of population viability analysis.
 Sinauer, Sunderland, Massachusetts, USA.
 
  }
-\author{ Original MATLAB code by Morris and Doak (2002) }
+%\author{  }
 
 \seealso{  \code{\link{vitalsim}} }
 \examples{

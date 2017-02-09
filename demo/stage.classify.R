@@ -1,10 +1,10 @@
 ## stage.classify.R
 
 ## copied from demo graphics
-if(dev.cur() <= 1) get(getOption("device"))()
+#if(dev.cur() <= 1) get(getOption("device"))()
 
-opar <- par(ask = interactive() &&
-            (.Device %in% c("X11", "GTK", "gnome", "windows","quartz")))
+#opar <- par(ask = interactive() &&
+#            (.Device %in% c("X11", "GTK", "gnome", "windows","quartz")))
 
 
 options(digits=3)
@@ -294,7 +294,7 @@ lines(xp, exp(predict(fruit1,list(rose=xp))), col="red", lwd=2)
 
 
 
-par(opar)
+#par(opar)
 
 
 

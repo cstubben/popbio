@@ -1,10 +1,9 @@
 ## fillmore.R
 
 ## copied from demo graphics
-if(dev.cur() <= 1) get(getOption("device"))()
-
-opar <- par(ask = interactive() &&
-            (.Device %in% c("X11", "GTK", "gnome", "windows","quartz")))
+#if(dev.cur() <= 1) get(getOption("device"))()
+#opar <- par(ask = interactive() &&
+#            (.Device %in% c("X11", "GTK", "gnome", "windows","quartz")))
 
 
 caption<-function (x) 
@@ -322,7 +321,7 @@ matplot(aq.ex.seed, xlab="Years", ylab="Quasi-extinction probability", type="l",
 of 1 above-ground individual"))
 
 
-par(opar)
+#par(opar)
 
 
 

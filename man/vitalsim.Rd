@@ -67,8 +67,8 @@ Sinauer, Sunderland, Massachusetts, USA.}
 Adapted to R by Patrick Nantel, 12 July 2005.  }
 
 \note{The correlation matrices for \emph{Hudsonia} in
-\url{http://www.sinauer.com/PVA/hudcorrs.mat} include some
-correlations>1.  A corrected set of correlations was sent by D. Doak
+Morris and Doak 2002 include some
+correlations > 1.  A corrected set of correlations was sent by D. Doak
 on 8/4/2007.  Therefore the results from the simulation below are
 different than the book.}
 
@@ -79,12 +79,12 @@ different than the book.}
 data(hudvrs)
 data(hudcorrs)
 ## set vrtypes
-hudvrtypes<-c(rep(1,13), rep(3,5), rep(1,6))
+hudvrtypes <- c(rep(1,13), rep(3,5), rep(1,6))
 
 ## run Full model- using 100 runs here for speed
-full<-vitalsim(hudvrs$mean, hudvrs$var, hudcorrs$corrin,
-hudcorrs$corrout, hudmxdef, vrtypes=hudvrtypes,
-n0=c(4264,3,30,16,25,5), yrspan=20 , runs=100)
+full <- vitalsim(hudvrs$mean, hudvrs$var, hudcorrs$corrin,
+ hudcorrs$corrout, hudmxdef, vrtypes=hudvrtypes,
+ n0=c(4264,3,30,16,25,5), yrspan=20 , runs=100)
 ## deterministic and stochastic lambda
 full[1:2]
 ## log stochastic lambda
@@ -93,17 +93,17 @@ sd(full$logLambdas)
 
 ## SKIP the next two simulations- however, sample output is included for plotting
 #NO between year correlations so corrout = diag(0,13)  - all zeros
-# no.between<-vitalsim(hudvrs$mean, hudvrs$var, hudcorrs$corrin,
+# no.between <- vitalsim(hudvrs$mean, hudvrs$var, hudcorrs$corrin,
 # diag(0,13), hudmxdef, vrtypes=hudvrtypes,
 # n0=c(4264,3,30,16,25,5), yrspan=20 )
-no.between<-list(CDFExt=c(rep(0,40),0.01,0.04,0.12,0.15,
+no.between <- list(CDFExt=c(rep(0,40),0.01,0.04,0.12,0.15,
 0.20,0.31,0.49,0.58,0.72,0.78))
 
 #NO correlations so corrout = diag(0,13) AND corrin=diag(13) - ones on diagonal
 # no.corr<-vitalsim(hudvrs$mean, hudvrs$var, diag(13),
 # diag(0,13), hudmxdef, vrtypes=hudvrtypes,
 # n0=c(4264,3,30,16,25,5), yrspan=20 )
-no.corr<-list(CDFExt=c(rep(0,39),0.03,0.03,0.06,0.12,0.20,
+no.corr <- list(CDFExt=c(rep(0,39),0.03,0.03,0.06,0.12,0.20,
 0.30,0.42,0.52,0.65,0.76,0.83))
 
 ## Figure 8.3 with corrected correlation matrices for full model

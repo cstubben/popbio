@@ -28,7 +28,7 @@ points(independ, depend, pch = pch.rug ,cex = cex.rug)
 logi.box <- function(independ, depend, col.box = "gray",
 x.lab = xlabel, las = las.h){
 plot(independ, depend, cex = 1, type = "n",
-ylim = c(-0.1,1.1), ylab = ylabel2,
+ylim = c(-0.1,1.1), ylab = ylabel,    # change ylabel2 to ylabel Nov 2, 2015
 xlab = x.lab, cex.lab = 1.2, las = las)
 indep.1 <- independ[depend == 1]
 indep.0 <- independ[depend == 0]

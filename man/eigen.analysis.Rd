@@ -3,10 +3,10 @@
 
 \title{ Eigenvalue and eigenvector analysis of a projection matrix }
 \description{
- Calculate population growth rate and other demographic parameters from a projection matrix model using matrix algebra 
+ Calculate population growth rate and other demographic parameters from a projection matrix model using matrix algebra
 }
 \usage{
-eigen.analysis(A, zero=TRUE)
+eigen.analysis(A, zero=FALSE)
 }
 
 \arguments{
@@ -21,7 +21,7 @@ eigen.analysis(A, zero=TRUE)
 
 \note{ If matrix A is singular, then \code{eigen.analysis} will return
   elasticities, sensitivities, and reproductive values with
-  NAs. 
+  NAs.
 
   This function is also included in \code{demogR} package.
 }
@@ -40,7 +40,7 @@ Caswell, H. 2001. Matrix population models: construction, analysis,
 and interpretation, Second edition. Sinauer, Sunderland,
 Massachusetts, USA.
 }
-\author{ Original code by  James Holland Jones, Stanford University, August 2005. } 
+\author{ Original code by James Holland Jones, Stanford University, August 2005. } 
 
 \seealso{ \code{\link{eigen}} and \code{\link{pop.projection}} }
 \examples{
@@ -54,7 +54,7 @@ Mod(ev$values)
 lmax <- which.max(Re(ev$values))
 lmax
 Re(ev$values)[lmax]
-## damping ratio is NA 
+## damping ratio is NA
 eigen.analysis(A)
 ## cycles every 3 years
 stage.vector.plot(pop.projection(A, c(1,1,1), 10)$stage.vectors)
@@ -64,7 +64,7 @@ stage.vector.plot(pop.projection(A, c(1,1,1), 10)$stage.vectors)
 data(teasel)
 a<-eigen.analysis(teasel)
 a
-barplot(a$stable.stage, col="green", ylim=c(0,1), 
+barplot(a$stable.stage, col="green", ylim=c(0,1),
        ylab="Stable stage proportion", xlab="Stage class", main="Teasel")
 box()
 

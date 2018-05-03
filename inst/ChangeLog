@@ -1,3 +1,7 @@
+changes in version 2.4.4 (2018-05-03)
+	*finally updated my email in package description
+	* set zero=FALSE in eigen.analysis to match default in sensitivity
+
 changes in version 2.4.3 (2016-03-31)
 	*fixed error in demo(fillmore) and demo(stage.classify) due to old code from demo graphics
 
@@ -7,20 +11,20 @@ changes in version 2.4.2 (2015-11-02)
 changes in version 2.4.1 (2015-11-02)
 
 	*added secder and stoch.sens function in the demogR package since it was removed from CRAN
-        *fixed bug in y-axis labels in logi.hist.plot when boxp=TRUE 
+        *fixed bug in y-axis labels in logi.hist.plot when boxp=TRUE
 	*changed imports to suggests quadprog package.  This package is required for QPmat only
 	*removed invalid URLs in some help pages
 
 changes in version 2.4 (2012-03-20)
- 
-	*removed vignette due to errors with greek symbols, unloaded packages 
-        (lattice, XML) and others.  The old vignette examples are now 
+
+	*removed vignette due to errors with greek symbols, unloaded packages
+        (lattice, XML) and others.  The old vignette examples are now
         at https://github.com/cstubben/popbio/wiki
 
-	*replaced sd(logLam) with apply(logLam, 2, sd) in vitalsim to avoid 
+	*replaced sd(logLam) with apply(logLam, 2, sd) in vitalsim to avoid
          Warning: sd(<matrix>) is deprecated
 
-	* changed stoch.projection to only use a list of matrices.  The matrices 
+	* changed stoch.projection to only use a list of matrices.  The matrices
         are now sampled once before the loop and the code runs much faster.
 
 	* fixed bug in boot.transitions if some stages are NA.  Vectors
@@ -41,7 +45,7 @@ changes in version 2.3 (2011-6-22)
 changes in version 2.2 (2011-3-22)
 
 	* added srt to control label rotation in image2
-	* compressed aq.trans and aq.census to avoid warnings in new R version 
+	* compressed aq.trans and aq.census to avoid warnings in new R version
 
 changes in version 2.1 (2010-9-30)
 
@@ -88,8 +92,8 @@ changes in version 2.0 (2009-9-14)
 	* minor changes include updating lnorms, allowing NAs in image2
 	and projection.matrix, adding pooled matrix to calathea, changing
 	defaults for image2.
-	
-	
+
+
 changes in version 1.1.11 (2008-12-10)
 
 	* added image2 plot for projection, sensitivity and elasticity
@@ -100,7 +104,7 @@ changes in version 1.1.11 (2008-12-10)
 	* forgot to escape matrix multiplier %*% in LTRE example, so last
 	plot and matrix were wrong, since % is intrepreted as comment
 	character in help files (*.Rd).
-	
+
 changes in version 1.1.9 (2008-07-08)
 
 	* fixed error in vitalsens example noted by Jay Rotella.
@@ -110,18 +114,18 @@ changes in version 1.1.9 (2008-07-08)
 	* changed  x@gradient[i] to attr(x, "gradient")[i] in vitalsens to
 	avoid error in R-devel 2.8: trying to get slot "gradient" from an
 	object of a basic class ("numeric") with no slots
-	
+
 	* added ChangeLog and Citation.  Now citation("popbio") will
 	return JSS article.
 
 	* saved hudcorrs as *.rda file type with two elements, corrin
 	and corrout (ie, removed vector of vital rate labels).
-	
+
 	* set varF=NULL as default in multiresultm
 
 	* fixed test.census and projection.matrix examples to match names
 	used in JSS paper (eg, trans01 was previously named test.trans and trans)
-	
+
 changes in version 1.1.8 (2008-03-13)
 
 	* added grizzly bear population counts for count-based PVAs
@@ -190,7 +194,7 @@ changes in version 1.1.2 (2007-09-13)
 	* removed extra brackets, foreign language encodings (Akcakaya) in
 	.Rd files requested by JSS editors
 
-changes in version 1.1.1 (2007-08-25) 
+changes in version 1.1.1 (2007-08-25)
 
 	* added pfister.plot to create log-log plots of variance
 	vs. sensitivity and CV vs. elasticity
@@ -211,7 +215,7 @@ changes in version 1.1.1 (2007-08-25)
 
 	* added column names to boot.transitions (vector and matrix
 	output, e.g., a11, a21, a31 a12, ...) and pop.projection output
- 
+
 	* changed stage.vector.plot examples to project matrix in example
 	2.1 in Caswell and create figure 2.3.
 
@@ -229,8 +233,7 @@ changes in version 1.1  (2007-07-28)
 
 	* added print statements on long loops used in all three
 	stochastic growth functions to track progress
- 
+
 	* now rounding stages first in vector before checking extinction
 	probability in stoch.quasi.ext.  Now if vector is (.3,.4,.4) and
 	ext prob=1 then rounding stages sets n=0.
-

@@ -1,4 +1,4 @@
-eigen.analysis<-function(A, zero=TRUE)
+eigen.analysis<-function(A, zero=FALSE)
 {
     ev <- eigen(A)
     # R sorts eigenvalues in decreasing order, according to Mod(values)
@@ -11,30 +11,30 @@ eigen.analysis<-function(A, zero=TRUE)
      ## OR  second largest magnitude in case of ties using rle - round needed for imprimitive matrices
     dr<-rle(round(Mod(ev$values), 5  ))$values
     dr<-dr[1]/dr[2]
-    
+
     W <- ev$vectors
     w <- abs(Re(W[, lmax]))
     ## check if matrix is singular-and output NAs rather than stop (better for loops and bootstrapping)
     V <- try(Conj(solve(W)), silent=TRUE)
     if (class(V) == "try-error") {
-      eigen.analysis <- list(lambda1 = lambda, stable.stage = w/sum(w), 
-        sensitivities = A*NA, elasticities = A*NA, repro.value = w*NA, 
+      eigen.analysis <- list(lambda1 = lambda, stable.stage = w/sum(w),
+        sensitivities = A*NA, elasticities = A*NA, repro.value = w*NA,
         damping.ratio = dr)
                            }
-    else{ 
+    else{
     v <- abs(Re(V[lmax, ]))
     s <- v %o% w
     if (zero) {
         s[A == 0] <- 0
     }
     e <- s * A/lambda
-    
+
     x <- dimnames(A)
     dimnames(s) <- x
     names(w) <- x[[1]]
     names(v) <- x[[1]]
-    eigen.analysis <- list(lambda1 = lambda, stable.stage = w/sum(w), 
-        sensitivities = s, elasticities = e, repro.value = v/v[1], 
+    eigen.analysis <- list(lambda1 = lambda, stable.stage = w/sum(w),
+        sensitivities = s, elasticities = e, repro.value = v/v[1],
         damping.ratio = dr)
   }
     eigen.analysis

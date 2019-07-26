@@ -4,7 +4,7 @@ generation.time<-function(A, ...)
    A1<-splitA(A, ...)
    Tmat<-A1[[1]]
    Fmat<-A1[[2]]
-  
+
   # probably could add some other checks here
   s <- length(diag(Tmat))
   # check if matrix is singular
@@ -13,8 +13,8 @@ generation.time<-function(A, ...)
    else{
      R <- Fmat %*% N
      Ro<- lambda(R)
-   lambda <- lambda(A) 
-   generation.time = log(Ro)/log(lambda)   
+   lambda <- lambda(A)
+   generation.time <- log(Ro)/log(lambda)   
   }
    generation.time
 }

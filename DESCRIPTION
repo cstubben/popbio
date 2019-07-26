@@ -1,8 +1,8 @@
 Package: popbio
-Version: 2.4.4
+Version: 2.5
 Author: Chris Stubben, Brook Milligan, Patrick Nantel
 Maintainer: Chris Stubben <chris.stubben@hci.utah.edu>
-Date: 2018-05-03
+Date: 2019-07-25
 Title: Construction and Analysis of Matrix Population Models
 License: GPL-3
 Suggests: quadprog

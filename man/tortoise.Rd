@@ -17,7 +17,7 @@ Projection matrices for the desert tortoise \emph{Gopherus agassizii} with 4
 different fertility estimates (low, medium low, medium high, and high)
 }
 \examples{
-data(tortoise)
+tortoise
 A <- tortoise[["med.high"]]
 # log color scale not needed
 image2(A, mar = c(1, 3.5, 5, 1), log = FALSE, box.off = .1)

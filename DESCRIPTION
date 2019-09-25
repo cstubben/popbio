@@ -5,6 +5,7 @@ Maintainer: Chris Stubben <chris.stubben@hci.utah.edu>
 Title: Construction and Analysis of Matrix Population Models
 License: GPL-3
 Encoding: UTF-8
+LazyData: true
 Suggests: quadprog
 Description: Construct and analyze projection matrix models from a demography study of marked individuals classified by age or stage. The package covers methods described in Matrix Population Models by Caswell (2001) and Quantitative Conservation Biology by Morris and Doak (2002).
 RoxygenNote: 6.1.1

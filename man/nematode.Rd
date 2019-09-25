@@ -18,7 +18,7 @@ A time-series of population vectors for the sugarbeet cyst nematode
 four replicates, measured every two days, for 10 days. .
 }
 \examples{
-data(nematode)
+nematode
 stage.vector.plot(nematode,
   prop = FALSE, log = "y", ylim = c(.3, 200),
   xlab = "Time", ylab = "Nematode density"

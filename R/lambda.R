@@ -22,10 +22,9 @@
 #' @author Chris Stubben
 #'
 #' @examples
-#' A<-matrix(c(0,0,2,.3,0,0,0,.6,0), nrow=3,byrow=TRUE)
+#' A <- matrix(c(0,0,2,.3,0,0,0,.6,0), nrow=3,byrow=TRUE)
 #' lambda(A)
 #' Re(eigen(A)$values)
-#' data(hudsonia)
 #' sapply(hudsonia, lambda)
 #'
 #' @export

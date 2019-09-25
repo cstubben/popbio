@@ -43,7 +43,6 @@ p <- pop.projection(A,n, 15)
 p
 damping.ratio(A)
 stage.vector.plot(p$stage.vectors, col=2:4)
-data(whale)
 A <- whale
 #n <- c(4,38,36,22)
 n <- c(5,5,5,5)

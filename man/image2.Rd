@@ -60,7 +60,6 @@ a new color category, eg, 2e-06 would usually be grouped with 0 using
 be used.
 }
 \examples{
-data(calathea)
 A <- calathea[[11]]
 op <- par(mfrow=c(2,2))
 image2(A, text.cex=.8)

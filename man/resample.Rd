@@ -39,7 +39,6 @@ values are recycled to match the number of non-zero fertilities.
 see section 12.1.5.2 on parametric bootsrap in Caswell (2001)
 }
 \examples{
-data(hudsonia)
 A <- hudsonia[[1]]
 lambda(A)
 ## NOTE fertilities are in first two rows, so use r=1:2 for splitting this matrix

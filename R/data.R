@@ -22,7 +22,7 @@
 #' @seealso \code{\link{aq.trans}} for annual transitions with stage and fate
 #' in same row
 #' @examples
-#' data(aq.census)
+#' head2(aq.census)
 #' sv <- table(aq.census$status, aq.census$year)
 #' sv
 #' stage.vector.plot(sv[-1, ], prop = FALSE)
@@ -58,8 +58,7 @@
 #' @source Data set owners: Brook Milligan, Chris Stubben, Allan Strand
 #' @seealso \code{\link{aq.census}}
 #' @examples
-#' data(aq.trans)
-#' head(aq.trans, 3)
+#' head2(aq.trans)
 #' sv <- table(aq.trans$stage, aq.trans$year)
 #' addmargins(sv)
 #' stage.vector.plot(sv[-1, ], prop = FALSE, main = "Aquilegia stage vectors")
@@ -92,7 +91,7 @@
 #' in demographic transitions of a tropical understory herb: Projection matrix
 #' analysis. Ecological Monographs 65:155-192.
 #' @examples
-#' data(calathea)
+#' calathea
 #' ## Single matrix
 #' calathea[[11]]
 #' image2(calathea[[11]], text.cex = .8)
@@ -129,7 +128,6 @@
 #' biology: Theory and practice of population viability analysis. Sinauer,
 #' Sunderland, Massachusetts, USA.
 #' @examples
-#' data(grizzly)
 #' grizzly
 #' ## plot like Fig 3.6 (p. 66)
 #' plot(grizzly$year, grizzly$N,
@@ -198,8 +196,7 @@
 #' Sunderland, Massachusetts, USA.
 #' @seealso \code{\link{vitalsim}}
 #' @examples
-#' data(hudcorrs)
-#' hudcorrs$corrin
+#' hudcorrs
 "hudcorrs"
 
 #' Projection matrices for mountain golden heather
@@ -215,7 +212,7 @@
 #' biology: Theory and practice of population viability analysis. Sinauer,
 #' Sunderland, Massachusetts, USA.
 #' @examples
-#' data(hudsonia)
+#' hudsonia
 #' sapply(hudsonia, lambda)
 #' ## mean matrix
 #' x <- mean(hudsonia)
@@ -242,7 +239,6 @@
 #' biology: Theory and practice of population viability analysis. Sinauer,
 #' Sunderland, Massachusetts, USA.
 #' @examples
-#' data(hudvrs)
 #' hudvrs
 #' hudmxdef(hudvrs$mean)
 "hudvrs"
@@ -282,7 +278,7 @@
 #' populations of monkeyflowers (\emph{Mimulus cardinalis} and \emph{M.
 #' lewisii}). Ecology 87:2014-2025.
 #' @examples
-#' data(monkeyflower)
+#' monkeyflower
 #' ## convert M. cardinalis rows to list of 16 matrices
 #' A <- subset(monkeyflower, species == "cardinalis")
 #' # use as.matrix to convert data.frame to numeric matrix
@@ -319,7 +315,7 @@
 #' @references Caswell, H. 2001. Matrix population models. Construction,
 #' Analysis and interpretation. 2nd ed. Sinauer, Sunderland, Massachusetts.
 #' @examples
-#' data(nematode)
+#' nematode
 #' stage.vector.plot(nematode,
 #'   prop = FALSE, log = "y", ylim = c(.3, 200),
 #'   xlab = "Time", ylab = "Nematode density"
@@ -335,7 +331,7 @@
 #' @references Caswell, H. 2001. Matrix population models. Construction,
 #' Analysis and interpretation. 2nd ed. Sinauer, Sunderland, Massachusetts.
 #' @examples
-#' data(teasel)
+#' teasel
 #' image2(teasel, mar = c(1, 3.5, 5, 1), box.offset = .1)
 #' title("Teasel projection matrix", line = 2.5)
 #' # fertilities for a monocarpic plant in a prebreeding census in last column
@@ -355,7 +351,7 @@
 #'  \item{\code{fruits}}{Total number of fruits}
 #' }
 #' @examples
-#' data(test.census)
+#' test.census
 #' stages <- c("seedling", "vegetative", "reproductive")
 #' ## Cross-tabulate stage vectors and order rows by stage
 #' sv <- table(test.census$stage, test.census$year)[stages, ]
@@ -419,7 +415,7 @@
 #' biology: Theory and practice of population viability analysis. Sinauer,
 #' Sunderland, Massachusetts, USA.
 #' @examples
-#' data(tortoise)
+#' tortoise
 #' A <- tortoise[["med.high"]]
 #' # log color scale not needed
 #' image2(A, mar = c(1, 3.5, 5, 1), log = FALSE, box.off = .1)
@@ -440,7 +436,6 @@
 #' @references Caswell, H. 2001. Matrix population models. Construction,
 #' Analysis and interpretation. 2nd ed. Sinauer, Sunderland, Massachusetts.
 #' @examples
-#' data(whale)
 #' whale
 #' splitA(whale)
 #' lambda(whale)
@@ -472,7 +467,6 @@
 #' in survivorship data. Ecological Applications 8(1): 184-193.
 #' @seealso \code{\link{Kendall}} and \code{\link{varEst}}
 #' @examples
-#' data(woodpecker)
 #' woodpecker
 #' x <- subset(woodpecker, rate == "adult")
 #' plot(x$year, x$start,

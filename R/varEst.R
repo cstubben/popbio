@@ -23,7 +23,6 @@
 #' @author Patrick Nantel, 20 June 2005. Last modified May 1st 2007.
 #'
 #' @examples
-#' data(woodpecker)
 #' varEst(woodpecker)
 #'
 #' @export

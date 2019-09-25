@@ -19,7 +19,6 @@ Calculates the reproductive values of a projection matrix
 see section 4.5 in Caswell (2001)
 }
 \examples{
-data(teasel)
 v <- reproductive.value(teasel)
 v
 dotchart(log10(v), pch=16, xlab="Reproductive value (log10)")

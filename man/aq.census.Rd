@@ -31,7 +31,7 @@ This sample data set includes census data from 10 of the 15 total demography
 plots established in 1995.
 }
 \examples{
-data(aq.census)
+head2(aq.census)
 sv <- table(aq.census$status, aq.census$year)
 sv
 stage.vector.plot(sv[-1, ], prop = FALSE)

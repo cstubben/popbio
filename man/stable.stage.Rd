@@ -19,7 +19,6 @@ Calculates the stable stage distribution of a projection matrix
 see section 4.5 in Caswell (2001)
 }
 \examples{
-data(teasel)
 w <- stable.stage(teasel)
 w
 barplot(w, col="green", ylim=c(0,1), las=1, main="Teasel",

@@ -38,8 +38,7 @@ census plants using a combination of status and size data recorded in the
 field.  See \code{demo(stage.classify)} for more details.
 }
 \examples{
-data(aq.trans)
-head(aq.trans, 3)
+head2(aq.trans)
 sv <- table(aq.trans$stage, aq.trans$year)
 addmargins(sv)
 stage.vector.plot(sv[-1, ], prop = FALSE, main = "Aquilegia stage vectors")

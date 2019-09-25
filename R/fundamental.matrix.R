@@ -21,13 +21,12 @@
 #' analysis, and interpretation, Second edition. Sinauer, Sunderland,
 #' Massachusetts, USA.
 #'
-#' @seealso see \code{\link{generation.time}} and \code{\link{net.reproductive.rate}} 
+#' @seealso see \code{\link{generation.time}} and \code{\link{net.reproductive.rate}}
 #' for other age-specific traits
 #'
 #' @author Chris Stubben
 #'
 #' @examples
-#' data(whale)
 #' fundamental.matrix(whale)
 #'
 #' @export

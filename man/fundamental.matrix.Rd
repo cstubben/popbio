@@ -29,7 +29,6 @@ each stage class and the mean and variance of the time to death
 see section 5.3.1 in Caswell (2001).
 }
 \examples{
-data(whale)
 fundamental.matrix(whale)
 
 }
@@ -39,7 +38,7 @@ analysis, and interpretation, Second edition. Sinauer, Sunderland,
 Massachusetts, USA.
 }
 \seealso{
-see \code{\link{generation.time}} and \code{\link{net.reproductive.rate}} 
+see \code{\link{generation.time}} and \code{\link{net.reproductive.rate}}
 for other age-specific traits
 }
 \author{

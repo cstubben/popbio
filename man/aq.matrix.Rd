@@ -51,7 +51,6 @@ germination and equal survival rates.
 Adds individual fertilites to annual transitions using a prebreeding census.
 }
 \examples{
-data(aq.trans)
 x <- subset(aq.trans, year==1996)
 ## number of recruits in 1997
 rec <- nrow(subset(aq.trans, year==1997 & stage == "recruit"))

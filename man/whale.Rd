@@ -16,7 +16,6 @@ Projection matrix for killer whales with 4 size classes: yearling, juvenile,
 mature and post-reproductive
 }
 \examples{
-data(whale)
 whale
 splitA(whale)
 lambda(whale)

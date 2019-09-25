@@ -25,7 +25,6 @@
 #' @author Chris Stubben
 #'
 #' @examples
-#' data(hudsonia)
 #' sgr <- stoch.growth.rate(hudsonia)
 #' sgr
 #' exp(sgr$approx)

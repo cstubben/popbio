@@ -40,7 +40,6 @@ converted Matlab code from  Box 7.3 in Morris and Doak (2002) with nmax option
 added to introduce simple density dependence
 }
 \examples{
-data(hudsonia)
 n <- c(4264, 3,30,16,25,5)
 names(n) <- c("seed",  "seedlings", "tiny", "small", "medium" , "large")
 ## use equal and unequal probabilities for matrix selection

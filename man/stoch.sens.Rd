@@ -25,7 +25,6 @@ Function copied from demogR package after it was removed from CRAN.
 See section 14.4.1 in Caswell 2001.
 }
 \examples{
-data(hudsonia)
 stoch.sens(hudsonia)
 
 }

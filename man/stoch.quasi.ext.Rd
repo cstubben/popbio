@@ -41,7 +41,6 @@ environment
 converted Matlab code from  Box 7.5 in Morris and Doak (2002)
 }
 \examples{
-data(hudsonia)
 n <- c(4264, 3,30,16,25,5)
 names(n) <- c("seed",  "seedlings", "tiny", "small", "medium" , "large")
 ## exclude seeds using sumweight.  Using 100 nreps for speed

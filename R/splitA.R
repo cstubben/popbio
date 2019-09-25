@@ -29,13 +29,10 @@
 #' @author Chris Stubben
 #'
 #' @examples
-#' data(whale)
 #' splitA(whale)
 #' # teasel -fertilitiles in last column
-#' data(teasel)
 #' splitA(teasel, r=1:6, c=6)
 #' # hudsonia - fertilities in first two columns
-#' data(hudsonia)
 #' A <- hudsonia[[1]]
 #' splitA(A, r=1:2)
 #' ## example using a logical matrix (if fertilities were in the upper diagonal)

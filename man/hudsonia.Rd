@@ -18,7 +18,7 @@ for years 1985 through 1988 with 6 size classes: seeds, seedlings, and 4 size
 classes divided by plant area.
 }
 \examples{
-data(hudsonia)
+hudsonia
 sapply(hudsonia, lambda)
 ## mean matrix
 x <- mean(hudsonia)

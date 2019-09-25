@@ -16,7 +16,6 @@ A matrix containing variances
 Calculates the variances from a list of matrices
 }
 \examples{
-data(hudsonia)
 var2(hudsonia)
 
 }

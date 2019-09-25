@@ -25,7 +25,6 @@
 #' @author M. de la Cruz Rot
 #'
 #' @examples
-#' data(aq.trans)
 #' aq.trans$survived <- aq.trans$fate!="dead"
 #' a <- subset(aq.trans, leaf<50 & stage!="recruit", c(leaf,survived))
 #' logi.hist.plot(a$leaf,  a$survived,

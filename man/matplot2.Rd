@@ -57,7 +57,6 @@ Only a few basic legend options are available.  For more control, set
 legend=NA and run separately
 }
 \examples{
-data(calathea)
 # survival rates
 x <- calathea[9:12]
 x <- sapply(x, function(x) colSums(splitA(x, r=1:2)$T))

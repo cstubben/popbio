@@ -14,7 +14,6 @@
 #' @author Chris Stubben
 #'
 #' @examples
-#' data(aq.trans)
 #' head2(aq.trans)
 #'
 #' @export

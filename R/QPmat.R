@@ -20,7 +20,6 @@
 #'
 #' @examples
 #' \dontrun{
-#' data(nematode)
 #' ## list nonzero elements
 #' nonzero <- c( 1, 2, 5, 6, 7, 9)
 #' ## create C matrix

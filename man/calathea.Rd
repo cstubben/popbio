@@ -21,7 +21,7 @@ seed, seedling, juvenile, pre-reproductive, and 4 reproductive classes
 divided by leaf area.
 }
 \examples{
-data(calathea)
+calathea
 ## Single matrix
 calathea[[11]]
 image2(calathea[[11]], text.cex = .8)

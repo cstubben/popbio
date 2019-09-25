@@ -17,7 +17,6 @@
 #' @author Chris Stubben
 #'
 #' @examples
-#' data(hudvrs)
 #' hudmxdef(hudvrs$mean)
 #'
 #' @export

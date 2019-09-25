@@ -21,13 +21,10 @@ Calculates the net reproductive rate of a stage classified matrix using the
 dominant eigenvalue of the matrix R
 }
 \examples{
-data(whale)
 net.reproductive.rate(whale)
 ## fertilities in last column
-data(teasel)
 net.reproductive.rate(teasel, r=1:6, c=6)
 ## Plot 3 from Calathea - values are not the same as p. 105 in Caswell.
-data(calathea)
 sapply(calathea[9:12], net.reproductive.rate)
 
 }

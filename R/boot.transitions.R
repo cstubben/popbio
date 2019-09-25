@@ -27,7 +27,6 @@
 #' @author Chris Stubben
 #'
 #' @examples
-#' data(test.census)
 #' ## create stage-fate dataframe using merge and subset
 #' trans01 <- subset(
 #'              merge(test.census, test.census, by="plant", sort=FALSE),
@@ -61,7 +60,6 @@
 #' boot.transitions(trans01, 5)
 #' boot.transitions(trans01, 5, by.stage=TRUE)
 #' ## Aquilegia example
-#' data(aq.trans)
 #' x <- subset(aq.trans, year==1996)
 #' # calculate lamda, seed survival and recruitment rate using aq.matrix
 #' rec <- nrow(subset(aq.trans, year==1997 & stage == "recruit"))

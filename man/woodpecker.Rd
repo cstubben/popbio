@@ -23,7 +23,6 @@ Number of juvenile and adult Acorn Woodpeckers and survival in the Water
 Canyon, New Mexico population, reconstructed from Stacey and Taper (1992).
 }
 \examples{
-data(woodpecker)
 woodpecker
 x <- subset(woodpecker, rate == "adult")
 plot(x$year, x$start,

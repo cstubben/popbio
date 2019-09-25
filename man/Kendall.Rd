@@ -54,7 +54,6 @@ tor <- data.frame(rate=rep(c("g4","g5","g6"), each=3),
 ## use fewer grades for faster loop
 tor.est<-Kendall(tor, grades=200)
 tor.est
-data(woodpecker)
 wp.est <- Kendall(woodpecker, grades=200)
 wp.est
 

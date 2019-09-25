@@ -31,7 +31,6 @@ Calculates the log stochastic growth rate by Tuljapukar's approximation and by s
 converted Matlab code from  Box 7.4 in Morris and Doak (2002)
 }
 \examples{
-data(hudsonia)
 sgr <- stoch.growth.rate(hudsonia)
 sgr
 exp(sgr$approx)

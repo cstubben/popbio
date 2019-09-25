@@ -23,7 +23,6 @@
 #' @author Chris Stubben
 #'
 #' @examples
-#' data(grizzly)
 #' logN <- log(grizzly$N[-1]/grizzly$N[-39])
 #' mu <- mean(logN)
 #' sig2 <- var(logN)

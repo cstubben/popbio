@@ -41,7 +41,7 @@ Matrix constructed using a post-breeding census with four stage classes:
 Seeds, small non-reproductive, large non-reproductive, and reproductive.
 }
 \examples{
-data(monkeyflower)
+monkeyflower
 ## convert M. cardinalis rows to list of 16 matrices
 A <- subset(monkeyflower, species == "cardinalis")
 # use as.matrix to convert data.frame to numeric matrix

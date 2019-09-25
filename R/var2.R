@@ -9,7 +9,6 @@
 #' @author Chris Stubben
 #'
 #' @examples
-#' data(hudsonia)
 #' var2(hudsonia)
 #'
 #' @export

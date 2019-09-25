@@ -9,7 +9,7 @@ sensitivity(A, zero = FALSE)
 \arguments{
 \item{A}{A projection matrix}
 
-\item{zero}{Set sensitivities for unobserved transitions to zero, default is false}
+\item{zero}{Set sensitivities for unobserved transitions to zero, default is FALSE}
 }
 \value{
 A sensitivity matrix
@@ -22,7 +22,6 @@ matrix elements
 see section 9.1 in Caswell (2001)
 }
 \examples{
-data(teasel)
 sens <- sensitivity(teasel)
 ## IMAGE plot with smaller boxes
 image2(sens, mar=c(1,3.5,5,1), box.offset=.1)

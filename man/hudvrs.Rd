@@ -21,7 +21,6 @@ Best Kendall estimates of vital rate means (9 growth, 4 survival, and 11
 fertility rates) for \emph{Hudsonia montana}.
 }
 \examples{
-data(hudvrs)
 hudvrs
 hudmxdef(hudvrs$mean)
 }

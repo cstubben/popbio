@@ -25,7 +25,6 @@ Returns the mean matrix from a list of matrices using a combination of
 S3 method for the \code{\link{mean}} of a list of matrices
 }
 \examples{
-data(hudsonia)
 mean(hudsonia)
 # or
 x <- matrix(unlist(hudsonia), ncol=length(hudsonia) )

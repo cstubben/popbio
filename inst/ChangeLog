@@ -1,165 +1,131 @@
+changes in version 2.6 (2019-09-25)
+	* added roxygen2 comments
+	* set zero=FALSE in both sensitivity and eigen.analysis
+	* removed colorguide function
+	# add lazyload = true
+
 changes in version 2.4.4 (2018-05-03)
-	*finally updated my email in package description
+	* finally updated my email in package description
 	* set zero=FALSE in eigen.analysis to match default in sensitivity
 
 changes in version 2.4.3 (2016-03-31)
-	*fixed error in demo(fillmore) and demo(stage.classify) due to old code from demo graphics
+	* fixed error in demo(fillmore) and demo(stage.classify) due to old code from demo graphics
 
 changes in version 2.4.2 (2015-11-02)
-	*fixed Notes required by CRAN, export mean.list and removed invalid URLs in help pages
+	* fixed Notes required by CRAN, export mean.list and removed invalid URLs in help pages
 
 changes in version 2.4.1 (2015-11-02)
-
-	*added secder and stoch.sens function in the demogR package since it was removed from CRAN
-        *fixed bug in y-axis labels in logi.hist.plot when boxp=TRUE
-	*changed imports to suggests quadprog package.  This package is required for QPmat only
-	*removed invalid URLs in some help pages
+	* added secder and stoch.sens function in the demogR package since it was removed from CRAN
+   * fixed bug in y-axis labels in logi.hist.plot when boxp=TRUE
+	* changed imports to suggests quadprog package.  This package is required for QPmat only
+	* removed invalid URLs in some help pages
 
 changes in version 2.4 (2012-03-20)
-
-	*removed vignette due to errors with greek symbols, unloaded packages
+	* removed vignette due to errors with greek symbols, unloaded packages
         (lattice, XML) and others.  The old vignette examples are now
         at https://github.com/cstubben/popbio/wiki
-
-	*replaced sd(logLam) with apply(logLam, 2, sd) in vitalsim to avoid
+	* replaced sd(logLam) with apply(logLam, 2, sd) in vitalsim to avoid
          Warning: sd(<matrix>) is deprecated
-
 	* changed stoch.projection to only use a list of matrices.  The matrices
         are now sampled once before the loop and the code runs much faster.
-
 	* fixed bug in boot.transitions if some stages are NA.  Vectors
         will have an extra column and return an unhelpful error.
-
 	* fixed bug in resample if splitting A matrix using a F matrix
         (i.e, some elements have both T and F values and were not added)
 
 changes in version 2.3.1 (2011-7-11)
-
 	* changed option strip.white=FALSE to strip.white=false in
 	load_matrix.Rnw (SweaveOpts line) to avoid warning in R CMD check
 
 changes in version 2.3 (2011-6-22)
-
 	* added matrix2 function to create square matrices and updated vignette
 
 changes in version 2.2 (2011-3-22)
-
 	* added srt to control label rotation in image2
 	* compressed aq.trans and aq.census to avoid warnings in new R version
 
 changes in version 2.1 (2010-9-30)
-
 	* added option to split A using a logical matrix since row and
 	column indexes will not always work.
-
 	* created vignette describing two ways (using scan or read.table)
 	to load projection matrices into R.  Try vignette("load_matrix")
 
 changes in version 2.0 (2009-9-14)
-
 	* split the six combined parts of eigen.analysis into separate
 	 functions (lambda, stable.stage, reproductive.value,
 	 damping.ratio, sensitivity, and elasticity).  Among other things,
 	 this makes it easier to apply the functions to a list of
 	 matrices.
-
 	* modified the three functions that calculate age-specific traits
 	 (generation.time, net.reproductive.rate and fundamental matrix) to
 	accept a projection matrix as input (which is then split into
 	separate T and F matrices using the splitA function).  Again, this
 	makes it easier to apply the functions to a list of matrices.
-
 	* modified the 3 main datasets (teasel, tortoise, and whale) to
 	include only a projection matrix (and not separate T and F
 	matrices, since A can be split using splitA)
-
 	* added splitA function to decompose a projection matrix into T and
 	F matrices
-
 	* added resample function to resample  a projection matrix
 	using a multinomial distribution for transitions and a log normal
 	distribution for fertilities
-
 	* added var2 function to calculate the variance of a list of
 	matrices (like mean.list, but variance is not generic, so var2)
-
 	* added matplot2 function to plot the rows of a matrix with a
 	legend included
-
 	* moved a number of long help examples that re-created plots in
 	Caswell (2001) to a single demo called Caswell.
-
 	* minor changes include updating lnorms, allowing NAs in image2
 	and projection.matrix, adding pooled matrix to calathea, changing
 	defaults for image2.
 
-
 changes in version 1.1.11 (2008-12-10)
-
 	* added image2 plot for projection, sensitivity and elasticity
 	matrices.  Examples were added to a number of help files.
-
 	* fixed stage.vector.plot to allow NA values as part of input
-
 	* forgot to escape matrix multiplier %*% in LTRE example, so last
 	plot and matrix were wrong, since % is intrepreted as comment
 	character in help files (*.Rd).
 
 changes in version 1.1.9 (2008-07-08)
-
 	* fixed error in vitalsens example noted by Jay Rotella.
 	Previously, Sf3 is set to 1 in last loop and then not reset to
 	.8943 when calculating vitalsens(goose.el, goose.vr).
-
 	* changed  x@gradient[i] to attr(x, "gradient")[i] in vitalsens to
 	avoid error in R-devel 2.8: trying to get slot "gradient" from an
 	object of a basic class ("numeric") with no slots
-
 	* added ChangeLog and Citation.  Now citation("popbio") will
 	return JSS article.
-
 	* saved hudcorrs as *.rda file type with two elements, corrin
 	and corrout (ie, removed vector of vital rate labels).
-
 	* set varF=NULL as default in multiresultm
-
 	* fixed test.census and projection.matrix examples to match names
 	used in JSS paper (eg, trans01 was previously named test.trans and trans)
 
 changes in version 1.1.8 (2008-03-13)
-
 	* added grizzly bear population counts for count-based PVAs
-
 	* added extCDF function for extinction time cdfs.  This function
 	is called by countCDFxt and was previously hidden in that
 	function.
-
 	* added plot option to countCDFxt and set default value for tq
 	option, which is usually equal to number of tranistions (nt) for
 	regularly censused populations.
 
 changes in version 1.1.7 (2008-02-21)
-
 	* added Calathea to LTRE example with plot, year, and interaction
 	effects
-
 	* added s3 method for function mean.list to get the mean matrix
 	from a list of matrices.
 
 changes in version 1.1.6 (2008-01-14)
-
 	* changed ltre to LTRE
-
 	* added plots to vitalsens example
 
 changes in version 1.1.5 (2008-01-05)
-
 	* added ltre function for fixed LTRE.  A random design is included
 	in the example
-
 	* added Calathea dataset for tropical understory herb in Horvitz
 	and Schemske (1995)
-
 	* fixed damping ratio in eigen.analysis.  Now the function finds
 	the second largest modulus and not just the modulus of the second
 	eigenvalue ( in case of eigenvalues with equal magnitudes in
@@ -168,72 +134,51 @@ changes in version 1.1.5 (2008-01-05)
 	which may return two or more indexes in some cases
 
 changes in version 1.1.4 (2007-11-13)
-
-	* fixed error in image plot on teasel example after loading to
-	CRAN
+	* fixed error in image plot on teasel example after loading to CRAN
 
 changes in version 1.1.3 (2007-11-13)
-
 	* added function vitalsens for vital rate sensitivities and
 	elasticities
-
 	* added matplots to teasel example
-
 	* changed name of lambda to lambda1 in eigen.analysis output to
 	match package demogR (in case demogR is loaded after popbio, then
 	functions using eigen.analysis should still work with some
 	exceptions, eg, if matrix is singular)
 
 changes in version 1.1.2 (2007-09-13)
-
 	* fixed undefined nyrs variable in varEst
-
 	* added checks to head2 function to work with matrix or dataframe
 	input only
-
 	* removed extra brackets, foreign language encodings (Akcakaya) in
 	.Rd files requested by JSS editors
 
 changes in version 1.1.1 (2007-08-25)
-
 	* added pfister.plot to create log-log plots of variance
 	vs. sensitivity and CV vs. elasticity
-
 	* added more plotting examples (fig 9.3, 9.4, 9.11) from chap 9 in
 	Caswell to teasel and tortoise datasets
-
 	* added age-specific survival and fertility curves (fig 5.1 and
 	5.2) to whale dataset
-
 	* corrected errors in hudcorr matrices and vitalsim function
 	suggested by Doak in email dated 8/4/07.
-
 	* added plot based on fig 8.3 to vitalsim function and code (not
 	run) to simulate no correlations or only within-year correlations
-
 	* changed colors in stage.vector.plot to rainbow(8)
-
 	* added column names to boot.transitions (vector and matrix
 	output, e.g., a11, a21, a31 a12, ...) and pop.projection output
-
 	* changed stage.vector.plot examples to project matrix in example
 	2.1 in Caswell and create figure 2.3.
 
 changes in version 1.1  (2007-07-28)
-
 	* added new functions and datasets contributed by Patrick Nantel
-
 	* added default row and column names (if missing) to
 	stage.vector.plot, checks for matrix with 2 or more stages, and
 	repeats colors if necessary
-
 	* now checking if matrix is singular in eigen.analysis.  If matrix
 	is singular, NA values are used instead of exiting with a warning.
 	This is useful for bootstrapping that may create singular matrices
-
 	* added print statements on long loops used in all three
 	stochastic growth functions to track progress
-
 	* now rounding stages first in vector before checking extinction
 	probability in stoch.quasi.ext.  Now if vector is (.3,.4,.4) and
 	ext prob=1 then rounding stages sets n=0.

@@ -72,9 +72,6 @@ D. Doak on 8/4/2007.  Therefore the results from the simulation below are
 different than the book.
 }
 \examples{
-## load vital rates and correlation matrices
-data(hudvrs)
-data(hudcorrs)
 ## set vrtypes
 hudvrtypes <- c(rep(1,13), rep(3,5), rep(1,6))
 ## run Full model- using 100 runs here for speed

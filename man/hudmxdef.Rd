@@ -18,7 +18,6 @@ growth, and reproduction). Growth rates are defined as a set of binomial
 choices as in Table 8.4 B in Morris and Doak (2002).
 }
 \examples{
-data(hudvrs)
 hudmxdef(hudvrs$mean)
 
 }

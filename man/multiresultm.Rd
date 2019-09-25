@@ -30,7 +30,6 @@ Adapted from Matlab code in Box 8.11 in Morris and Doak (2002) and section
 15.1.3 in Caswell (2001)
 }
 \examples{
-data(whale)
 x <- splitA(whale)
 whaleT <- x$T
 whaleF <- x$F

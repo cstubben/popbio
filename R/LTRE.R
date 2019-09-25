@@ -27,7 +27,6 @@
 #'
 #' @examples
 #' #######  Calathea ovandensis
-#' data(calathea)
 #' calathea_pool <- calathea[['pooled']]
 #' ## Create plots like FIGURE 7 in Horvitz et al 1997
 #' plots <- split(calathea[-17], rep(1:4,each=4))
@@ -73,7 +72,6 @@
 #' 7.94e-06, 8.07e-02, 3.22e-01, 2.16e-01,
 #' 2.91e-07, 1.58e-02, 1.15e-01, 6.01e-01), byrow=TRUE, nrow=4)
 #' ## Population effects using pooled population matrices
-#' data(monkeyflower)
 #' card <- subset(monkeyflower,  species=="cardinalis" & year=="pooled")
 #' ## split rows into list of 4 matrices
 #' Atrt <- lapply(split(as.matrix(card[,4:19]), 1:4),  matrix, nrow=4, byrow=TRUE)

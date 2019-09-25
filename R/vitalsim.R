@@ -51,9 +51,6 @@
 #' Adapted to R by Patrick Nantel, 12 July 2005
 #'
 #' @examples
-#' ## load vital rates and correlation matrices
-#' data(hudvrs)
-#' data(hudcorrs)
 #' ## set vrtypes
 #' hudvrtypes <- c(rep(1,13), rep(3,5), rep(1,6))
 #' ## run Full model- using 100 runs here for speed

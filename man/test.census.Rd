@@ -18,7 +18,7 @@ test.census
 Three years of census data for a hypothetical plant with three stage classes
 }
 \examples{
-data(test.census)
+test.census
 stages <- c("seedling", "vegetative", "reproductive")
 ## Cross-tabulate stage vectors and order rows by stage
 sv <- table(test.census$stage, test.census$year)[stages, ]

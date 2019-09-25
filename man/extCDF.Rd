@@ -29,7 +29,6 @@ parameters derived from population counts.
 converted Matlab code from Box 3.3 and equation 3.5 in Morris and Doak 2002
 }
 \examples{
-data(grizzly)
 logN <- log(grizzly$N[-1]/grizzly$N[-39])
 mu <- mean(logN)
 sig2 <- var(logN)

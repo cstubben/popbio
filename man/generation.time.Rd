@@ -22,13 +22,10 @@ Calculates the generation time of a stage-classified matrix
 see section 5.3.5 in Caswell (2001).
 }
 \examples{
-data(whale)
 generation.time(whale)
 ## fertilities in last column
-data(teasel)
 generation.time(teasel, r=1:6, c=6)
 ## Plot 3 from Calathea
-data(calathea)
 sapply(calathea[9:12], generation.time)
 
 }

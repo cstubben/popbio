@@ -23,7 +23,6 @@ Finds the best estimates of mean and environmental variance for beta-binomial
 vital rates using the approximation method of Akcakaya (2002)
 }
 \examples{
-data(woodpecker)
 varEst(woodpecker)
 
 }

@@ -21,10 +21,8 @@
 #'
 #' @examples
 #' ## 4 Hudsonia matrices
-#' data(hudsonia)
 #' pfister.plot(hudsonia)
 #' ## 3 Mimulus cardinalis matrices at Carlon
-#' data(monkeyflower)
 #' mim <- subset(monkeyflower, species == "cardinalis" &
 #'     site == "Carlon" & year != "pooled", select = c(4:19))
 #' ## convert data frame to list of matrices using split

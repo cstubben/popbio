@@ -19,7 +19,7 @@
 #' @references Caswell, H. 2001. Matrix population models: construction,
 #' analysis, and interpretation, Second edition. Sinauer, Sunderland,
 #' Massachusetts, USA.
-#' 
+#'
 #' Morris, W. F., and D. F. Doak. 2002. Quantitative conservation
 #' biology: Theory and practice of population viability analysis. Sinauer,
 #' Sunderland, Massachusetts, USA.
@@ -27,7 +27,6 @@
 #' @author Patrick Nantel
 #'
 #' @examples
-#' data(whale)
 #' x <- splitA(whale)
 #' whaleT <- x$T
 #' whaleF <- x$F

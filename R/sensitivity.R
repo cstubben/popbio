@@ -6,7 +6,7 @@
 #' see section 9.1 in Caswell (2001)
 #'
 #' @param A A projection matrix
-#' @param zero Set sensitivities for unobserved transitions to zero, default is false
+#' @param zero Set sensitivities for unobserved transitions to zero, default is FALSE
 #'
 #' @return A sensitivity matrix
 #'
@@ -19,7 +19,6 @@
 #' @author Chris Stubben
 #'
 #' @examples
-#' data(teasel)
 #' sens <- sensitivity(teasel)
 #' ## IMAGE plot with smaller boxes
 #' image2(sens, mar=c(1,3.5,5,1), box.offset=.1)

@@ -24,12 +24,10 @@ the eigenvalue with the second largest magnitude.
 }
 \examples{
 ## whale converges slowly to stable stage distribution
-data(whale)
 matplot2(pop.projection(whale, c(1,1,1,1), 60)$stage.vectors,
 prop=TRUE, legend=NA,
 main=paste("whale damping ratio = ", round(damping.ratio(whale),3) ) )
 # Calathea - compare to Table 12 in Horvitz and Schemske (1995)
-data(calathea)
 x <- sapply(calathea[-17], damping.ratio)
 x <- matrix(x, nrow=4, byrow=TRUE, dimnames= list(paste("plot", 1:4), 1982:1985))
 x

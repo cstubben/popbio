@@ -15,7 +15,6 @@
 #' @author Chris Stubben
 #'
 #' @examples
-#' data(teasel)
 #' w <- stable.stage(teasel)
 #' w
 #' barplot(w, col="green", ylim=c(0,1), las=1, main="Teasel",

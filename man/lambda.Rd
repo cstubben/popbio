@@ -25,10 +25,9 @@ imprimitive matrices with \emph{d} eigenvalues of equal modulus is the one
 with the largest real part (\code{which.max(Re(eigen(A)$values))}).
 }
 \examples{
-A<-matrix(c(0,0,2,.3,0,0,0,.6,0), nrow=3,byrow=TRUE)
+A <- matrix(c(0,0,2,.3,0,0,0,.6,0), nrow=3,byrow=TRUE)
 lambda(A)
 Re(eigen(A)$values)
-data(hudsonia)
 sapply(hudsonia, lambda)
 
 }

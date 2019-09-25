@@ -24,7 +24,6 @@ Returns the first and last rows using output from both \code{\link{head}} and
 ordered datasets such as longitudinal census data.
 }
 \examples{
-data(aq.trans)
 head2(aq.trans)
 
 }

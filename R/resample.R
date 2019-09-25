@@ -29,7 +29,6 @@
 #' @author Chris Stubben
 #'
 #' @examples
-#' data(hudsonia)
 #' A <- hudsonia[[1]]
 #' lambda(A)
 #' ## NOTE fertilities are in first two rows, so use r=1:2 for splitting this matrix

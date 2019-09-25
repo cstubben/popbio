@@ -17,7 +17,6 @@
 #' @author Chris Stubben
 #'
 #' @examples
-#' data(hudsonia)
 #' mean(hudsonia)
 #' # or
 #' x <- matrix(unlist(hudsonia), ncol=length(hudsonia) )

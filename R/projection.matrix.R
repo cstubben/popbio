@@ -43,7 +43,6 @@
 #' @author Chris Stubben
 #'
 #' @examples
-#' data(test.census)
 #' trans01 <- subset(merge(test.census, test.census, by = "plant", sort =FALSE),
 #'                     year.x==2001 & year.y==2002 )
 #' ## Add individual fertilities using "anonymous reproduction"  based on the
@@ -63,7 +62,6 @@
 #' projection.matrix(trans01)
 #' projection.matrix(trans01, TF=TRUE)
 #' ## Example using Aquilegia data
-#' data(aq.trans)
 #' sf <- subset(aq.trans, year==1998 & plot==909, c(year, plant, stage, fruits, fate))
 #' ## rows and columns of final matrix
 #' levels(sf$stage)

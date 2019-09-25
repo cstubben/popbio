@@ -29,7 +29,7 @@
 #'
 #' @references Kendall, B. E. 1998. Estimating the magnitude of environmental
 #' stochasticity  in survivorship data. Ecological Applications 8(1): 184-193.
-#' 
+#'
 #' Morris, W. F., and D. F. Doak. 2002. Quantitative conservation
 #' biology: Theory and practice of population viability analysis. Sinauer,
 #' Sunderland, Massachusetts, USA.
@@ -48,7 +48,6 @@
 #' ## use fewer grades for faster loop
 #' tor.est<-Kendall(tor, grades=200)
 #' tor.est
-#' data(woodpecker)
 #' wp.est <- Kendall(woodpecker, grades=200)
 #' wp.est
 #'

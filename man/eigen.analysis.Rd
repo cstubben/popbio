@@ -9,7 +9,7 @@ eigen.analysis(A, zero = FALSE)
 \arguments{
 \item{A}{A projection matrix}
 
-\item{zero}{Set sensitivities for unobserved transitions to zero}
+\item{zero}{Set sensitivities for unobserved transitions to zero, default is FALSE}
 }
 \value{
 A list with 6 items
@@ -49,20 +49,16 @@ eigen.analysis(A)
 ## cycles every 3 years
 stage.vector.plot(pop.projection(A, c(1,1,1), 10)$stage.vectors)
 ### Teasel
-data(teasel)
 a <- eigen.analysis(teasel)
 a
 barplot(a$stable.stage, col="green", ylim=c(0,1),
   ylab="Stable stage proportion", xlab="Stage class", main="Teasel")
 box()
-
-op<-par(mfrow=c(2,2))
+op <- par(mfrow=c(2,2))
 image2(teasel, cex=.8, mar=c(0.5,3,4,1) )
 title("Teasel projection matrix", line=3)
-
 image2(a$elasticities, cex=.8, mar=c(0.5,3,4,1) )
 title("Elasticity matrix", line=3)
-
 ## default is sensitivity for non-zero elements in matrix
 image2(a$sensitivities, cex=.8, mar=c(0.5,3,4,1) )
 title("Sensitivity matrix 1", line=3)

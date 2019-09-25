@@ -21,7 +21,6 @@ Estimated number of adult female grizzly bears in the Greater Yellowstone
 population from 1959-1997.
 }
 \examples{
-data(grizzly)
 grizzly
 ## plot like Fig 3.6 (p. 66)
 plot(grizzly$year, grizzly$N,

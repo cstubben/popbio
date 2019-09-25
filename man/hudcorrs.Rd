@@ -20,8 +20,7 @@ montana} vital rates.  Correlations were calculated from first 13 growth and
 survival rates only, since fertility rates vary little.
 }
 \examples{
-data(hudcorrs)
-hudcorrs$corrin
+hudcorrs
 }
 \references{
 Morris, W. F., and D. F. Doak. 2002. Quantitative conservation

@@ -32,7 +32,6 @@
 #' @author James Holland Jones
 #'
 #' @examples
-#' data(hudsonia)
 #' stoch.sens(hudsonia)
 #'
 #' @export

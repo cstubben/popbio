@@ -4,8 +4,7 @@
 \alias{stoch.growth.rate}
 \title{Log stochastic growth rate}
 \usage{
-stoch.growth.rate(matrices, prob = NULL, maxt = 50000,
-  verbose = TRUE)
+stoch.growth.rate(matrices, prob = NULL, maxt = 50000, verbose = TRUE)
 }
 \arguments{
 \item{matrices}{a \code{\link{list}} with two or more projection matrices, or

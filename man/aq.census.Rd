@@ -4,7 +4,8 @@
 \name{aq.census}
 \alias{aq.census}
 \title{Annual census data for Aquilegia chrysantha}
-\format{A data frame with 2853 rows on the following 8 variables:
+\format{
+A data frame with 2853 rows on the following 8 variables:
 \describe{
   \item{plot}{Plot number}
   \item{year}{Year of census}
@@ -15,7 +16,8 @@
   \item{leaf}{Total number of leaves}
   \item{infl}{Total number of infloresences or flowering stalks}
   \item{fruits}{Total number of mature fruits}
-}}
+}
+}
 \source{
 Data set owners: Brook Milligan, Chris Stubben, Allan Strand
 }

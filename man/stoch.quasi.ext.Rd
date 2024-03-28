@@ -4,8 +4,17 @@
 \alias{stoch.quasi.ext}
 \title{Quasi-extinction threshold}
 \usage{
-stoch.quasi.ext(matrices, n0, Nx, tmax = 50, maxruns = 10,
-  nreps = 5000, prob = NULL, sumweight = NULL, verbose = TRUE)
+stoch.quasi.ext(
+  matrices,
+  n0,
+  Nx,
+  tmax = 50,
+  maxruns = 10,
+  nreps = 5000,
+  prob = NULL,
+  sumweight = NULL,
+  verbose = TRUE
+)
 }
 \arguments{
 \item{matrices}{a \code{\link{list}} with two or more projection matrices, or
@@ -46,7 +55,7 @@ names(n) <- c("seed",  "seedlings", "tiny", "small", "medium" , "large")
 ## exclude seeds using sumweight.  Using 100 nreps for speed
 x <- stoch.quasi.ext(hudsonia, n, Nx=10, nreps=100, sumweight=c(0,1,1,1,1,1))
 matplot(x, xlab="Years", ylab="Quasi-extinction probability",
- type='l', lty=1, col=rainbow(10), las=1,
+ type='l', lty=1, las=1,
  main="Time to reach a quasi-extinction threshold
 of 10 above-ground individuals")
 

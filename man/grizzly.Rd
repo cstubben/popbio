@@ -4,11 +4,13 @@
 \name{grizzly}
 \alias{grizzly}
 \title{Population sizes of grizzly bears in Yellowstone from 1959-1997}
-\format{A data frame with 39 rows on the following 2 variables.
+\format{
+A data frame with 39 rows on the following 2 variables.
   \describe{
     \item{\code{year}}{ Year of census}
     \item{\code{N}}{ Estimated number of female grizzlies}
-  }}
+  }
+}
 \source{
 Table 3.1 in Morris and Doak 2002. Original data from Eberhardt et
 al. 1986 and Haroldson 1999.

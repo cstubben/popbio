@@ -38,7 +38,7 @@ sensitivity <- function(A, zero = FALSE) {
   W <- ev$vectors
   w <- abs(Re(W[, lmax]))
   V <- try(Conj(solve(W)), silent = TRUE)
-  if (class(V) == "try-error") {
+  if (inherits(V, "try-error")) {
     message("Warning: matrix is singular")
     s <- A * NA
   } else {

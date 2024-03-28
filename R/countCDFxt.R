@@ -32,7 +32,7 @@
 #' Sunderland, Massachusetts, USA.
 #'
 #' @author Adapted to R by Patrick Nantel, 4 May 2005, from program 'extprob'
-#' of Morris \& Doak (2002: 79-86)
+#' of Morris and Doak (2002: 79-86)
 #'
 #' @examples
 #' ## plot like Figure 3.8 in Morris and Doak (2002).

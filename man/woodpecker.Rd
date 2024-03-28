@@ -4,13 +4,15 @@
 \name{woodpecker}
 \alias{woodpecker}
 \title{Survirvorship data for adult and juvenile Acorn Woodpeckers}
-\format{A data frame with 18 rows and 4 columns
+\format{
+A data frame with 18 rows and 4 columns
 \describe{
   \item{\code{rate}}{ Adult or juvenile stage}
   \item{\code{year}}{ Year}
   \item{\code{start}}{ Total number of starting individuals}
   \item{\code{surv}}{ Number surviving to spring}
-}}
+}
+}
 \source{
 Stacey, P.B., and M. Taper. 1992. Environmental variation and the
 persistence of small populations. Ecological Applications 2: 18-29.

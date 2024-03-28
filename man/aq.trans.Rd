@@ -4,7 +4,8 @@
 \name{aq.trans}
 \alias{aq.trans}
 \title{Annual transition data for Aquilegia chrysantha}
-\format{A data frame with 1637 rows on the following 9 variables:
+\format{
+A data frame with 1637 rows on the following 9 variables:
 \describe{
     \item{\code{plot}}{Plot number}
     \item{\code{year}}{Staring year of census}
@@ -19,7 +20,8 @@
     \code{seed} < \code{recruit} < \code{small} < \code{large} <
     \code{flower} < \code{dead}}
     \item{\code{rose2}}{Final number of rosettes}
-  }}
+  }
+}
 \source{
 Data set owners: Brook Milligan, Chris Stubben, Allan Strand
 }
@@ -46,12 +48,12 @@ stage.vector.plot(sv[-1, ], prop = FALSE, main = "Aquilegia stage vectors")
 ## use xpd to draw legend outside plot boundaries
 op <- par(mar = c(5, 4, 4, 1), xpd = TRUE)
 x <- barplot(prop.table(sv[-1, ], 2),
-  las = 1, col = rainbow(4), ylim = c(0, 1),
+  las = 1, col = 1:4, ylim = c(0, 1),
   xaxt = "n", space = .5, xlab = "Year", ylab = "Proportion in stage class"
 )
 yrs <- substr(colnames(sv), 3, 4)
 axis(1, x, yrs)
-legend(2.7, 1.25, rev(rownames(sv)[-1]), fill = rev(rainbow(4)), bty = "n", ncol = 2)
+legend(2.7, 1.25, rev(rownames(sv)[-1]), fill = 4:1, bty = "n", ncol = 2)
 par(op)
 }
 \seealso{

@@ -4,9 +4,16 @@
 \alias{stage.vector.plot}
 \title{Plot stage vector projections}
 \usage{
-stage.vector.plot(stage.vectors, proportions = TRUE,
-  legend.coords = "topright", ylim = NULL, xlab = "Years",
-  ylab = NULL, col = rainbow(8), ...)
+stage.vector.plot(
+  stage.vectors,
+  proportions = TRUE,
+  legend.coords = "topright",
+  ylim = NULL,
+  xlab = "Years",
+  ylab = NULL,
+  col = 1:8,
+  ...
+)
 }
 \arguments{
 \item{stage.vectors}{a matrix listing stage class vectors in columns}
@@ -22,7 +29,7 @@ defaults to top-right corner}
 
 \item{ylab}{a label for the y axis}
 
-\item{col}{vector of line colors, defaults to rainbow(8)}
+\item{col}{vector of line colors}
 
 \item{\dots}{additional options are passed to \code{\link{plot}} function}
 }

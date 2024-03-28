@@ -4,7 +4,9 @@
 \name{nematode}
 \alias{nematode}
 \title{Population densities for the sugarbeet cyst nematode}
-\format{A matrix listing densities from  3 stage classes over 6 time periods}
+\format{
+A matrix listing densities from  3 stage classes over 6 time periods
+}
 \source{
 Example 6.3 in Caswell (2001).
 }

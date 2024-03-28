@@ -4,8 +4,10 @@
 \name{calathea}
 \alias{calathea}
 \title{Projection matrices for a tropical understory herb}
-\format{A list of 17 matrices ordered by plot then year, with the pooled
-matrix last.}
+\format{
+A list of 17 matrices ordered by plot then year, with the pooled
+matrix last.
+}
 \source{
 Table 7 in Horvitz and Schemske (1995).  The pooled matrix is from
 Table 8.

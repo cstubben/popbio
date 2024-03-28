@@ -37,7 +37,7 @@ net.reproductive.rate <- function(A, ...) {
   Fmat <- A1[[2]]
   s <- length(diag(Tmat))
   N <- try(solve(diag(s) - Tmat), silent = TRUE)
-  if (class(N) == "try-error") {
+  if (inherits(N, "try-error")) {
     r <- NA
   }
   else {

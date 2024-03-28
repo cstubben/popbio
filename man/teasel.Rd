@@ -4,7 +4,9 @@
 \name{teasel}
 \alias{teasel}
 \title{Projection matrix for teasel}
-\format{A 6 x 6 matrix}
+\format{
+A 6 x 6 matrix
+}
 \source{
 Example 5.2 in Caswell 2001.
 }

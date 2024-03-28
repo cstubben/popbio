@@ -66,12 +66,12 @@
 #' ## use xpd to draw legend outside plot boundaries
 #' op <- par(mar = c(5, 4, 4, 1), xpd = TRUE)
 #' x <- barplot(prop.table(sv[-1, ], 2),
-#'   las = 1, col = rainbow(4), ylim = c(0, 1),
+#'   las = 1, col = 1:4, ylim = c(0, 1),
 #'   xaxt = "n", space = .5, xlab = "Year", ylab = "Proportion in stage class"
 #' )
 #' yrs <- substr(colnames(sv), 3, 4)
 #' axis(1, x, yrs)
-#' legend(2.7, 1.25, rev(rownames(sv)[-1]), fill = rev(rainbow(4)), bty = "n", ncol = 2)
+#' legend(2.7, 1.25, rev(rownames(sv)[-1]), fill = 4:1, bty = "n", ncol = 2)
 #' par(op)
 "aq.trans"
 

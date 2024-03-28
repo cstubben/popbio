@@ -27,7 +27,7 @@ reproductive.value <- function(A) {
   W <- ev$vectors
   w <- abs(Re(W[, lmax]))
   V <- try(Conj(solve(W)), silent = TRUE)
-  if (class(V) == "try-error") {
+  if (inherits(V, "try-error")) {
     stop("matrix A is singular")
   }
   v <- abs(Re(V[lmax, ]))

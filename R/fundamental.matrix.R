@@ -41,7 +41,7 @@ fundamental.matrix <- function(A, ...) {
   s <- length(diag(Tmat))
   # check if matrix is singular
   N <- try(solve(diag(s) - Tmat), silent = TRUE)
-  if (class(N) == "try-error") {
+  if (inherits(N, "try-error")) {
     fundamental.matrix <- "Transition matrix is singular"
   }
   else {

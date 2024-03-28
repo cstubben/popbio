@@ -4,7 +4,9 @@
 \name{hudsonia}
 \alias{hudsonia}
 \title{Projection matrices for mountain golden heather}
-\format{A list of 4 matrices from 1985-1988}
+\format{
+A list of 4 matrices from 1985-1988
+}
 \source{
 Table 6.7 in Morris and Doak 2002.  The original data is from Frost
 1990.

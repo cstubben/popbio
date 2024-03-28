@@ -4,7 +4,9 @@
 \name{whale}
 \alias{whale}
 \title{Projection matrix for killer whale}
-\format{A 4 x 4 matrix}
+\format{
+A 4 x 4 matrix
+}
 \source{
 Example 5.1 in Caswell (2001)
 }

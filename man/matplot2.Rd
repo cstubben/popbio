@@ -4,10 +4,25 @@
 \alias{matplot2}
 \title{Plot a matrix}
 \usage{
-matplot2(x, proportions = FALSE, legend = "topright", xlab = NULL,
-  ylab = NULL, type = "l", las = 1, pch = c(15:18, 1:3), lwd = 1,
-  lty = 1:nrow(x), col = rainbow(nrow(x)), lcex = 1, lbty = "o",
-  lcol = 1, ltitle = NULL, lsort = TRUE, ...)
+matplot2(
+  x,
+  proportions = FALSE,
+  legend = "topright",
+  xlab = NULL,
+  ylab = NULL,
+  type = "l",
+  las = 1,
+  pch = c(15:18, 1:3),
+  lwd = 1,
+  lty = 1:nrow(x),
+  col = 1:nrow(x),
+  lcex = 1,
+  lbty = "o",
+  lcol = 1,
+  ltitle = NULL,
+  lsort = TRUE,
+  ...
+)
 }
 \arguments{
 \item{x}{a matrix}

@@ -12,7 +12,7 @@
 #' @param ylim the y limits of the plot, defaults to min and max values in stage.vectors
 #' @param xlab a label for the x axis
 #' @param ylab a label for the y axis
-#' @param col vector of line colors, defaults to rainbow(8)
+#' @param col vector of line colors
 #' @param \dots additional options are passed to \code{\link{plot}} function
 #'
 #' @return A plot of stage or age class projections
@@ -47,7 +47,7 @@
 #' @export
 
 stage.vector.plot <- function(stage.vectors, proportions = TRUE, legend.coords = "topright",
-  ylim = NULL, xlab = "Years", ylab = NULL, col = rainbow(8), ...) {
+  ylim = NULL, xlab = "Years", ylab = NULL, col = 1:8, ...) {
   p <- stage.vectors
   n <- dim(p)[1] # number of stage vectors
   if (is.null(n)) {

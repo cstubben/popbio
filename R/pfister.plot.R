@@ -54,7 +54,7 @@
 pfister.plot <- function(A) {
   n <- length(A)
   # error-checking
-  if (class(A) != "list") {
+  if (class(A)[1] != "list") {
     stop("A LIST of annual matrices is required")
   }
   ## matrix inputs should have same dimensions

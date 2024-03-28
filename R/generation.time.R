@@ -40,7 +40,7 @@ generation.time <- function(A, ...) {
   s <- length(diag(Tmat))
   # check if matrix is singular
   N <- try(solve(diag(s) - Tmat), silent = TRUE)
-  if (class(N) == "try-error") {
+  if (inherits(N, "try-error")) {
     generation.time <- NA
   }
   else {

@@ -81,7 +81,7 @@ eigen.analysis <- function(A, zero = FALSE) {
   # check if matrix is singular and output NAs rather than stop (better for
   # loops and bootstrapping)
   V <- try(Conj(solve(W)), silent = TRUE)
-  if (class(V) == "try-error") {
+  if (inherits(V, "try-error")) {
     eigen.analysis <- list(
       lambda1 = lambda, stable.stage = w / sum(w),
       sensitivities = A * NA, elasticities = A * NA, repro.value = w * NA,

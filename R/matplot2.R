@@ -14,7 +14,7 @@
 #' @param pch point types
 #' @param lwd line width
 #' @param lty line type
-#' @param col  color
+#' @param col color
 #' @param lcex legend size expansion
 #' @param lbty legend box type
 #' @param lcol number of columns in legend
@@ -49,7 +49,7 @@
 #' @export
 
 matplot2 <- function(x, proportions = FALSE, legend = "topright", xlab = NULL, ylab = NULL, type = "l",
-                     las = 1, pch = c(15:18, 1:3), lwd = 1, lty = 1:nrow(x), col = rainbow(nrow(x)),
+                     las = 1, pch = c(15:18, 1:3), lwd = 1, lty = 1:nrow(x), col = 1:nrow(x),
                      lcex = 1, lbty = "o", lcol = 1, ltitle = NULL, lsort = TRUE, ...) {
   n <- nrow(x)
   if (is.null(n)) {

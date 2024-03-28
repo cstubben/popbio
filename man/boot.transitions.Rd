@@ -80,7 +80,7 @@ aq.96$lambda
 ci
 # plot histogram
 hist(aq.96.boot$lambda, col="green", xlab="Lambda",
-        main=paste('Bootstrap estimates of population\\ngrowth rate from 1996-1997'))
+        main=paste('Bootstrap estimates of population\ngrowth rate from 1996-1997'))
 abline(v=ci, lty=3)
 
 }

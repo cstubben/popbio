@@ -119,7 +119,7 @@ projection.matrix <- function(transitions, stage = NULL, fate = NULL,
   # and check if "sort"  matches levels in fate,stage columns,
   #   e.g, sort names are misspelled or wrong columns selected by accident
   T_matrix <- try(prop.table(tf, 2)[sort, sort], silent = TRUE)
-  if (class(T_matrix) == "try-error") {
+  if (inherits(T_matrix, "try-error")) {
     warning(paste("Error sorting matrix.
   Make sure that levels in stage and fate columns
   match stages listed in sort option above.\n Printing unsorted matrix instead!\n"), call. = FALSE)

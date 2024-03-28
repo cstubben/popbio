@@ -4,11 +4,13 @@
 \name{hudvrs}
 \alias{hudvrs}
 \title{Best Kendall estimates of Hudsonia vital rate means and variances}
-\format{A data frame with 24 rows and 2 columns:
+\format{
+A data frame with 24 rows and 2 columns:
 \describe{
   \item{\code{mean}}{ vital rate means}
   \item{\code{var}}{ vital rate variances}
-}}
+}
+}
 \source{
 Data  listed in Box 8.10 for the \code{\link{vitalsim}} function.
 See also Table 8.5 in Morris and Doak (2002).

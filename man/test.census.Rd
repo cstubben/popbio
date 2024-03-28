@@ -4,13 +4,15 @@
 \name{test.census}
 \alias{test.census}
 \title{Census data for hypothetical plant}
-\format{A data frame with 41 census rows and 4 columns:
+\format{
+A data frame with 41 census rows and 4 columns:
 \describe{
  \item{\code{plant}}{Plant id number}
  \item{\code{year}}{Year of census}
  \item{\code{stage}}{Stage class: seedling, vegetative, or reproductive}
  \item{\code{fruits}}{Total number of fruits}
-}}
+}
+}
 \usage{
 test.census
 }

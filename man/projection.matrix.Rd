@@ -4,8 +4,15 @@
 \alias{projection.matrix}
 \title{Construct projection matrix models using transition frequency tables}
 \usage{
-projection.matrix(transitions, stage = NULL, fate = NULL,
-  fertility = NULL, sort = NULL, add = NULL, TF = FALSE)
+projection.matrix(
+  transitions,
+  stage = NULL,
+  fate = NULL,
+  fertility = NULL,
+  sort = NULL,
+  add = NULL,
+  TF = FALSE
+)
 }
 \arguments{
 \item{transitions}{a stage-fate data frame with stage or age class in the

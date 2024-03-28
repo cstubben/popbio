@@ -4,8 +4,16 @@
 \alias{stoch.projection}
 \title{Project stochastic growth from a sequence of matrices}
 \usage{
-stoch.projection(matrices, n0, tmax = 50, nreps = 5000, prob = NULL,
-  nmax = NULL, sumweight = rep(1, length(n0)), verbose = FALSE)
+stoch.projection(
+  matrices,
+  n0,
+  tmax = 50,
+  nreps = 5000,
+  prob = NULL,
+  nmax = NULL,
+  sumweight = rep(1, length(n0)),
+  verbose = FALSE
+)
 }
 \arguments{
 \item{matrices}{a \code{\link{list}} with two or more projection matrices}

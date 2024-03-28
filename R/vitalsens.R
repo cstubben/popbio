@@ -91,7 +91,7 @@ vitalsens <- function(elements, vitalrates) {
   if (!is.list(vitalrates)) {
     stop("Vital rates should be a vector or list")
   }
-  if (class(elements) != "expression") {
+  if (class(elements)[1] != "expression") {
     stop("Matrix elements should be an expression")
   }
   ## check length of expression
@@ -104,7 +104,7 @@ vitalsens <- function(elements, vitalrates) {
   }
   ## get values for matrix elements - enclos=NULL is used to restrict eval to names in vitalrates
   vrs <- try(sapply(elements, eval, vitalrates, NULL), silent = TRUE)
-  if (class(vrs) == "try-error") {
+  if (inherits(vrs, "try-error")) {
     # keep useful part of error message
     vrs <- sub("Error in eval\\(expr, envir, enclos\\) :", "", vrs[1])
     stop(paste("Cannot evaluate element expression using given vital rates:", vrs))

@@ -4,10 +4,21 @@
 \alias{logi.hist.plot}
 \title{Plot logistic regression}
 \usage{
-logi.hist.plot(independ, depend, logi.mod = 1, type = "dit",
-  boxp = TRUE, rug = FALSE, ylabel = "Probability",
-  ylabel2 = "Frequency", xlabel = "", mainlabel = "", las.h = 1,
-  counts = FALSE, ...)
+logi.hist.plot(
+  independ,
+  depend,
+  logi.mod = 1,
+  type = "dit",
+  boxp = TRUE,
+  rug = FALSE,
+  ylabel = "Probability",
+  ylabel2 = "Frequency",
+  xlabel = "",
+  mainlabel = "",
+  las.h = 1,
+  counts = FALSE,
+  ...
+)
 }
 \arguments{
 \item{independ}{explanatory variable}

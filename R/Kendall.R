@@ -8,14 +8,14 @@
 #'
 #' converted Matlab code from  Box 8.2 in Morris and Doak (2002)
 #'
-#' @param rates}{a matrix or dataframe with four columns: Rate identifier, Year,
+#' @param rates a matrix or dataframe with four columns: Rate identifier, Year,
 #' Total number of starting individuals, Number growing (or surviving).
-#' @param grades}{number of different levels of means and variances to try, default is 1000
-#' @param maxvar}{maximum variance to search over, default is 0.20. The maximum
+#' @param grades number of different levels of means and variances to try, default is 1000
+#' @param maxvar maximum variance to search over, default is 0.20. The maximum
 #' possible is 0.25 and searching a narrower range will improve the accuracy of the answer.
-#' @param minvar}{minimum variance to search, default is 0.00001
-#' @param maxmean}{maximum limit on the mean values to search, default 1
-#' @param minmean}{minimum limit on the mean values to search, default 0.01
+#' @param minvar minimum variance to search, default is 0.00001
+#' @param maxmean maximum limit on the mean values to search, default 1
+#' @param minmean minimum limit on the mean values to search, default 0.01
 #'
 #' @return  A list with estimates and confidence intervals
 #' \item{est}{a matrix with 5 columns: (1) estimated mean, (2) Kendall's MLE mean,
@@ -36,7 +36,7 @@
 #'
 #' @seealso \code{\link{varEst}}
 #'
-#' @author Adapted to R from Morris \& Doak (2002: 267-270) by Patrick Nantel.
+#' @author Adapted to R from Morris and Doak (2002: 267-270) by Patrick Nantel.
 #'
 #' @examples
 #' ## desert tortoise input from Box 8.2 - compare results to Table 8.3

@@ -4,8 +4,10 @@
 \name{hudcorrs}
 \alias{hudcorrs}
 \title{Correlation matrices for Hudsonia vital rates}
-\format{A list with 2 correlation matrices, corrin (within year correlation)
-and corrout (between year correlation).}
+\format{
+A list with 2 correlation matrices, corrin (within year correlation)
+and corrout (between year correlation).
+}
 \source{
 The correlation matrices in Morris and Doak 2002 include some
 correlations > 1.  A corrected set of correlations was sent by the D. Doak on

@@ -4,8 +4,7 @@
 \alias{countCDFxt}
 \title{Count-based extinction probabilities and bootstrap confidence intervals}
 \usage{
-countCDFxt(mu, sig2, nt, Nc, Ne, tq = nt, tmax = 50, Nboot = 500,
-  plot = TRUE)
+countCDFxt(mu, sig2, nt, Nc, Ne, tq = nt, tmax = 50, Nboot = 500, plot = TRUE)
 }
 \arguments{
 \item{mu}{estimated value of mean mu}
@@ -60,5 +59,5 @@ Sunderland, Massachusetts, USA.
 }
 \author{
 Adapted to R by Patrick Nantel, 4 May 2005, from program 'extprob'
-of Morris \& Doak (2002: 79-86)
+of Morris and Doak (2002: 79-86)
 }

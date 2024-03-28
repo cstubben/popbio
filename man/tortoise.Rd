@@ -4,7 +4,9 @@
 \name{tortoise}
 \alias{tortoise}
 \title{Projection matrices for desert tortoise}
-\format{A list of 4 matrices}
+\format{
+A list of 4 matrices
+}
 \source{
 Table 5 in Doak et al (1994).  Used by Caswell (2001) in chapter 9 on
 sensitivity analysis.

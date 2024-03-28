@@ -5,23 +5,29 @@
 \title{Find the best Kendall's estimates of mean and environmental variance for
 beta-binomial vital rates}
 \usage{
-Kendall(rates, grades = 1000, maxvar = 0.2, minvar = 1e-05,
-  maxmean = 1, minmean = 0.01)
+Kendall(
+  rates,
+  grades = 1000,
+  maxvar = 0.2,
+  minvar = 1e-05,
+  maxmean = 1,
+  minmean = 0.01
+)
 }
 \arguments{
-\item{rates}{a}{matrix or dataframe with four columns: Rate identifier, Year,
+\item{rates}{a matrix or dataframe with four columns: Rate identifier, Year,
 Total number of starting individuals, Number growing (or surviving).}
 
-\item{grades}{number}{of different levels of means and variances to try, default is 1000}
+\item{grades}{number of different levels of means and variances to try, default is 1000}
 
-\item{maxvar}{maximum}{variance to search over, default is 0.20. The maximum
+\item{maxvar}{maximum variance to search over, default is 0.20. The maximum
 possible is 0.25 and searching a narrower range will improve the accuracy of the answer.}
 
-\item{minvar}{minimum}{variance to search, default is 0.00001}
+\item{minvar}{minimum variance to search, default is 0.00001}
 
-\item{maxmean}{maximum}{limit on the mean values to search, default 1}
+\item{maxmean}{maximum limit on the mean values to search, default 1}
 
-\item{minmean}{minimum}{limit on the mean values to search, default 0.01}
+\item{minmean}{minimum limit on the mean values to search, default 0.01}
 }
 \value{
 A list with estimates and confidence intervals
@@ -70,5 +76,5 @@ Sunderland, Massachusetts, USA.
 \code{\link{varEst}}
 }
 \author{
-Adapted to R from Morris \& Doak (2002: 267-270) by Patrick Nantel.
+Adapted to R from Morris and Doak (2002: 267-270) by Patrick Nantel.
 }

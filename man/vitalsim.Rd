@@ -4,9 +4,22 @@
 \alias{vitalsim}
 \title{Stochastic vital rate simulations}
 \usage{
-vitalsim(vrmeans, vrvars, corrin, corrout, makemx, n0, yrspan, Ne = 500,
-  tmax = 50, runs = 500, vrtypes = NULL, vrmins = NULL,
-  vrmaxs = NULL, sumweight = NULL)
+vitalsim(
+  vrmeans,
+  vrvars,
+  corrin,
+  corrout,
+  makemx,
+  n0,
+  yrspan,
+  Ne = 500,
+  tmax = 50,
+  runs = 500,
+  vrtypes = NULL,
+  vrmins = NULL,
+  vrmaxs = NULL,
+  sumweight = NULL
+)
 }
 \arguments{
 \item{vrmeans}{means of vital rates}

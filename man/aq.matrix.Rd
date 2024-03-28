@@ -4,8 +4,15 @@
 \alias{aq.matrix}
 \title{Create a projection matrix for Aquilegia}
 \usage{
-aq.matrix(trans, recruits, summary = TRUE, seed.survival = 0.126,
-  seed.bank.size = 10000, seeds.per.fruit = 120, ...)
+aq.matrix(
+  trans,
+  recruits,
+  summary = TRUE,
+  seed.survival = 0.126,
+  seed.bank.size = 10000,
+  seeds.per.fruit = 120,
+  ...
+)
 }
 \arguments{
 \item{trans}{A data frame with transitions listing \code{\link{ordered}}

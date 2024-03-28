@@ -4,7 +4,8 @@
 \name{monkeyflower}
 \alias{monkeyflower}
 \title{Projection matrices for monkeyflower}
-\format{A data frame with 32 matrices, arranged with one matrix per row
+\format{
+A data frame with 32 matrices, arranged with one matrix per row
    \describe{
     \item{\code{species}}{M. cardinalis or M. lewisii}
     \item{\code{site}}{Study site}
@@ -25,7 +26,8 @@
     \item{\code{a42}}{matrix element a42;  small nr to reprod - growth  }
     \item{\code{a43}}{matrix element a43;  large nr to reprod - growth  }
     \item{\code{a44}}{matrix element a44;  reprod to reprod - stasis  }
-  }}
+  }
+}
 \source{
 \url{http://www.esapubs.org/archive/ecol/E087/126/appendix-E.htm}
 }

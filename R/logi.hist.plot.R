@@ -20,7 +20,7 @@
 #'
 #' @references de la Cruz Rot, M. 2005. Improving the Presentation of Results of
 #' Logistic Regression with R.  ESA Bulletin 86:41-48.
-#' \url{http://esapubs.org/bulletin/backissues/086-1/bulletinjan2005.htm}
+#' \url{https://esapubs.org/bulletin/backissues/086-1/bulletinjan2005.htm}
 #'
 #' @author M. de la Cruz Rot
 #'

@@ -85,7 +85,7 @@ abline(v=ci, lty=3)
 
 }
 \references{
-see Morris and Doak 2005 in \url{http://esapubs.org/Archive/mono/M075/004/appendix-A.htm}
+see Morris and Doak 2005 in \url{https://esapubs.org/Archive/mono/M075/004/appendix-A.htm}
 for resampling by stage class counts
 }
 \seealso{

@@ -19,7 +19,7 @@
 #'   \item{vector}{A matrix containing bootstrap stage vectors with one stage
 #' vector per row.}
 #'
-#' @references see Morris and Doak 2005 in \url{http://esapubs.org/Archive/mono/M075/004/appendix-A.htm}
+#' @references see Morris and Doak 2005 in \url{https://esapubs.org/Archive/mono/M075/004/appendix-A.htm}
 #' for resampling by stage class counts
 #'
 #' @seealso \code{\link{projection.matrix}}
